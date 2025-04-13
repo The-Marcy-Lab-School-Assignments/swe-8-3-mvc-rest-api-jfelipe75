@@ -22,3 +22,22 @@ export const createPlayer = async (playerName, playerStats) => {
   const [newPlayer, error] = await fetchData("/api/players/", options);
   return [newPlayer, error];
 };
+
+export const updatePlayer = async (id, playerName) => {
+  const options = {
+    method: "PATCH",
+    headers: { "Content-type": "application/json" },
+    body: JSON.stringify({ playerName }),
+  };
+
+  const [updatedPlayer, error] = await fetchData(`/api/players/${id}`, options);
+  return [updatedPlayer, error];
+};
+
+export const deletePlayer = async (id) => {
+  const options = {
+    method: "DELETE",
+  };
+  const [success, error] = await fetchData(`/api/players/${id}`, options);
+  return [success, error];
+};
