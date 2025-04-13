@@ -20,9 +20,13 @@ app.use(logRoutes);
 app.use(express.json());
 // Routes
 app.get("/api/players", servePlayers);
-app.get("/api/player/:id", servePlayer);
+app.get("/api/players/:id", servePlayer);
 
 app.post("/api/players", createPlayer);
+
+app.patch("/api/players/:id", updatePlayer);
+
+app.delete("/api/players/:id", deletePlayer);
 
 const port = 8080;
 

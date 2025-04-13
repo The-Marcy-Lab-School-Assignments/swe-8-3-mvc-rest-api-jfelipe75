@@ -24,8 +24,8 @@ class SoccerPlayer {
     return soccerPlayers.find((player) => Number(id) === player.id);
   }
   // update one value from the "database"
-  static editName(id, playerName, playerStats) {
-    let player = soccerPlayers.find(Number(id));
+  static editPlayer(id, playerName, playerStats) {
+    let player = soccerPlayers.find((p) => p.id === Number(id));
     if (!player) return null;
     if (playerName) {
       player.playerName = playerName;
@@ -37,7 +37,9 @@ class SoccerPlayer {
   }
   // Delete one value from the database
   static delete(id) {
-    const playerIndex = player.findIndex((player) => player.id === Number(id));
+    const playerIndex = soccerPlayers.findIndex(
+      (player) => player.id === Number(id)
+    );
     if (playerIndex < 0) return false;
 
     soccerPlayers.splice(playerIndex, 1);
