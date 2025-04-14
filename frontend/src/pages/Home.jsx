@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import {
   fetchAllPlayers,
   createPlayer,
-  fetchPlayerById,
 } from "../adapters/playerFetchers";
 
 const Home = () => {
