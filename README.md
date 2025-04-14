@@ -97,11 +97,11 @@ There are a total of 20 total requirements:
 
 ### Frontend Requirements
 
-- [ ] The server serves a frontend application at `/` using `express.static()` middleware.
-- [ ] The frontend application can send a `GET request` for and render the collection of resources from the server's "database"
-- [ ] The frontend application can send a `POST request` to create a new resource in the server's "database".
-- [ ] The frontend application can send a `PATCH request` to update an existing resource in the server's "database".
-- [ ] The frontend application can send a `DELETE request` to delete an existing resource in the server's "database".
+- [x] The server serves a frontend application at `/` using `express.static()` middleware.
+- [x] The frontend application can send a `GET request` for and render the collection of resources from the server's "database"
+- [x] The frontend application can send a `POST request` to create a new resource in the server's "database".
+- [x] The frontend application can send a `PATCH request` to update an existing resource in the server's "database".
+- [x] The frontend application can send a `DELETE request` to delete an existing resource in the server's "database".
 
 ## Error Codes:
 

@@ -4,9 +4,9 @@ const fetchData = async (url, options = {}) => {
     if (!res.ok) throw new Error(`Fetch failed: ${res.status}`);
 
     const data = await res.json();
-    return [data, null]; // ✅ Tuple: [data, error]
+    return [data, null];
   } catch (err) {
-    return [null, err.message]; // ✅ Tuple again
+    return [null, err.message];
   }
 };
 
