@@ -1,6 +1,6 @@
 # swe-8-3-mvc-rest-api
 
-Deployment Link:
+Deployment Link: https://swe-8-3-mvc-rest-api-jfelipe75.onrender.com
 
 ## Overview
 
@@ -93,7 +93,7 @@ There are a total of 20 total requirements:
 
 ### Deployment Requirements
 
-- [ ] Your application is deployed using Render and the public URL is added to the top of this README.
+- [x] Your application is deployed using Render and the public URL is added to the top of this README.
 
 ### Frontend Requirements
 
